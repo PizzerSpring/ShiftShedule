@@ -1,0 +1,126 @@
+
+@mixin flexbox() {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; font-size: 0;}
+
+ $minwidth: 320px;
+ $mw: 1140;
+ $md1: $mw+12;
+ $md2: 750; 
+ $md3: 767.98;
+ $md4: 479.98;
+
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{ color: #000; position: relative; padding: 0; margin: 0; min-width: $minwidth; height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}   
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+.container {
+   max-width: $mw+px; margin: 0 auto; width: 100%;
+   @media(max-width: $md1+px) {max-width: 750px;}
+   @media(max-width: $md2+px) {max-width: none; padding: 0 10px;} 
+}
+
+.header {
+    height: 60px;
+    background-color: #5CC1ED;
+}
+.content {
+}
+.calendar {
+}
+.container {
+}
+.calendar__titles {
+}
+.calendar__titletop {
+}
+.calendar__titlebottom {
+}
+.calendar__tables {
+}
+.calendar__column {
+}
+.calendar__january {
+}
+.calendar__month01 {
+}
+.calendar__february {
+}
+.calendar__month02 {
+}
+.calendar__march {
+}
+.calendar__month03 {
+}
+.calendar__april {
+}
+.calendar__month04 {
+}
+.calendar__may {
+}
+.calendar__month05 {
+}
+.calendar__june {
+}
+.calendar__jule {
+}
+.calendar__month07 {
+}
+.calendar__august {
+}
+.calendar__month08 {
+}
+.calendar__september {
+}
+.calendar__month09 {
+}
+.calendar__october {
+}
+.calendar__month10 {
+}
+.calendar__november {
+}
+.calendar__month11 {
+}
+.calendar__december {
+}
+.calendar__month12 {
+}
+.menu {
+}
+.menu__column {
+}
+.menu__list {
+}
+.menu__day {
+}
+.menu__maintype {
+}
+.menu__othertype {
+}
+.menu__listchange {
+}
+.menu__button {
+}
+.menu__but {
+}
+.footer {
+    height: 60px;
+    background-color: #5CC1ED;
+}
