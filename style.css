@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -18,6 +19,7 @@ nav, footer, header, aside {
   display: block; }
 
 html, body {
+  font-family: "Montserrat", sans-serif;
   color: #000;
   position: relative;
   padding: 0;
@@ -82,6 +84,185 @@ h1, h2, h3, h4, h5, h6 {
   height: 60px;
   background-color: #5CC1ED; }
 
+.calendar__titles {
+  margin: 20px 0 0 0; }
+
+.calendar__titletop {
+  text-align: center;
+  font-size: 28px; }
+
+.calendar__titlebottom {
+  text-align: center;
+  font-size: 18px;
+  margin: 20px 0 0 0; }
+
+.calendar__tables {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 40px 0 0 0;
+  font-size: 16px; }
+
+.calendar__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
+
+.calendar__january {
+  padding: 0 0 25px 0; }
+
+.calendar__month01 {
+  border-spacing: 7px 7px; }
+
+.calendar__february {
+  padding: 0 0 25px 0; }
+
+.calendar__month02 {
+  border-spacing: 7px 7px; }
+
+.calendar__march {
+  padding: 0 0 25px 0; }
+
+.calendar__month03 {
+  border-spacing: 7px 7px; }
+
+.calendar__april {
+  padding: 0 0 25px 0; }
+
+.calendar__month04 {
+  border-spacing: 7px 7px; }
+
+.calendar__may {
+  padding: 0 0 25px 0; }
+
+.calendar__month05 {
+  border-spacing: 7px 7px; }
+
+.calendar__june {
+  padding: 0 0 25px 0; }
+
+.calendar__jule {
+  padding: 0 0 25px 0; }
+
+.calendar__month07 {
+  border-spacing: 7px 7px; }
+
+.calendar__august {
+  padding: 0 0 25px 0; }
+
+.calendar__month08 {
+  border-spacing: 7px 7px; }
+
+.calendar__september {
+  padding: 0 0 25px 0; }
+
+.calendar__month09 {
+  border-spacing: 7px 7px; }
+
+.calendar__october {
+  padding: 0 0 25px 0; }
+
+.calendar__month10 {
+  border-spacing: 7px 7px; }
+
+.calendar__november {
+  padding: 0 0 25px 0; }
+
+.calendar__month11 {
+  border-spacing: 7px 7px; }
+
+.calendar__december {
+  padding: 0 0 25px 0; }
+
+.calendar__month12 {
+  border-spacing: 7px 7px; }
+
+.menu__row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+
+.menu__column {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  margin: 40px 0 40px 0; }
+
+.menu__day {
+  font-size: 18px;
+  margin: 10px 0 0 0; }
+
+.menu__maintype {
+  font-size: 18px;
+  margin: 10px 0 0 0; }
+
+.menu__othertype {
+  font-size: 18px;
+  margin: 10px 0 0 0; }
+
+.menu__button {
+  position: relative;
+  left: 45%;
+  margin: 0 0 30px 0; }
+
+.menu__but {
+  /*position: relative;
+   left: 45%;
+   margin: 0 0 30px 0;*/
+  display: inline-block;
+  border: 1px solid black;
+  padding: 0 20px 0 20px;
+  height: 50px;
+  background-color: #98CFE0;
+  font-weight: bold; }
+
 .footer {
   height: 60px;
   background-color: #5CC1ED; }
+
+td {
+  border: 1px solid black;
+  text-align: center;
+  padding: 3px; }
+
+th {
+  padding: 5px 0 5px 0;
+  border: 1px solid black; }
+
+#menu__mday {
+  border: 1px solid;
+  padding: 5px;
+  margin: 0 20px 0 0; }
+
+#menu__mmonth {
+  border: 1px solid;
+  padding: 5px;
+  margin: 0 20px 0 0; }
+
+#menu__myear {
+  border: 1px solid;
+  padding: 5px; }
+
+#menu__shifttwo {
+  display: block;
+  border: 1px solid;
+  margin: 15px 0 0 0;
+  padding: 5px; }
+
+#menu__shifttypeone {
+  border: 1px solid;
+  margin: 15px 20px 0 0;
+  padding: 5px; }
+
+#menu__shifttypetwo {
+  border: 1px solid;
+  margin: 15px 0 0 0;
+  padding: 5px; }
