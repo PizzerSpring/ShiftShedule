@@ -62,18 +62,21 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     margin: 20px 0 0 0;
 }
 .calendar__tables {
+   /* @include flexbox();
+    justify-content: space-around;
+    margin: 40px 0 0 0;
+    font-size: 16px;*/
+    
+}
+.calendar__row {
     @include flexbox();
     justify-content: space-around;
     margin: 40px 0 0 0;
     font-size: 16px;
-    
-}
-.calendar__column {
-    flex: 0 1 auto;
 }
 .calendar__january {
     padding: 0 0 25px 0;
-    
+    flex: 0 1 auto;
 }
 .calendar__month01 {
     border-spacing: 7px 7px;
@@ -81,6 +84,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 .calendar__february {
     padding: 0 0 25px 0;
+    flex: 0 1 auto;
 }
 .calendar__month02 {
     border-spacing: 7px 7px;
@@ -88,6 +92,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 .calendar__march {
     padding: 0 0 25px 0;
+    flex: 0 1 auto;
 }
 .calendar__month03 {
     border-spacing: 7px 7px;
@@ -109,6 +114,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 .calendar__june {
     padding: 0 0 25px 0;
+}
+.calendar__month06 {
+    border-spacing: 7px 7px;
 }
 .calendar__jule {
     padding: 0 0 25px 0;
@@ -170,12 +178,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 }
 .menu__maintype {
     font-size: 18px;
-    margin: 10px 0 0 0;
+    margin: 30px 0 0 0;
 }
-.menu__othertype {
-    font-size: 18px;
-    margin: 10px 0 0 0;
-}
+
 .menu__listchange {
     
 }
@@ -194,7 +199,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
    height: 50px;
    background-color: #98CFE0;
    font-weight: bold;
-   
 }
 .footer {
     height: 60px;
@@ -225,10 +229,14 @@ th {
 }
 
 #menu__shifttwo {
-    display: block;
+  /*  display: block;
     border: 1px solid;
     margin: 15px 0 0 0;
-    padding: 5px;
+    padding: 5px;*/
+}
+.menu__shed {
+    display: block;
+    margin: 15px 0 0 0;
 }
 
 #menu__shifttypeone {
@@ -240,4 +248,8 @@ th {
     border: 1px solid;
     margin: 15px 0 0 0;
     padding: 5px;
+}
+
+.menu_butcol {
+    background-color: burlywood;
 }

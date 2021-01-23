@@ -97,6 +97,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0 0 0; }
 
 .calendar__tables {
+  /* @include flexbox();
+    justify-content: space-around;
+    margin: 40px 0 0 0;
+    font-size: 16px;*/ }
+
+.calendar__row {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -107,25 +113,29 @@ h1, h2, h3, h4, h5, h6 {
   margin: 40px 0 0 0;
   font-size: 16px; }
 
-.calendar__column {
+.calendar__january {
+  padding: 0 0 25px 0;
   -webkit-box-flex: 0;
   -ms-flex: 0 1 auto;
   flex: 0 1 auto; }
-
-.calendar__january {
-  padding: 0 0 25px 0; }
 
 .calendar__month01 {
   border-spacing: 7px 7px; }
 
 .calendar__february {
-  padding: 0 0 25px 0; }
+  padding: 0 0 25px 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
 
 .calendar__month02 {
   border-spacing: 7px 7px; }
 
 .calendar__march {
-  padding: 0 0 25px 0; }
+  padding: 0 0 25px 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto; }
 
 .calendar__month03 {
   border-spacing: 7px 7px; }
@@ -144,6 +154,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .calendar__june {
   padding: 0 0 25px 0; }
+
+.calendar__month06 {
+  border-spacing: 7px 7px; }
 
 .calendar__jule {
   padding: 0 0 25px 0; }
@@ -202,11 +215,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__maintype {
   font-size: 18px;
-  margin: 10px 0 0 0; }
-
-.menu__othertype {
-  font-size: 18px;
-  margin: 10px 0 0 0; }
+  margin: 30px 0 0 0; }
 
 .menu__button {
   position: relative;
@@ -252,10 +261,14 @@ th {
   padding: 5px; }
 
 #menu__shifttwo {
+  /*  display: block;
+    border: 1px solid;
+    margin: 15px 0 0 0;
+    padding: 5px;*/ }
+
+.menu__shed {
   display: block;
-  border: 1px solid;
-  margin: 15px 0 0 0;
-  padding: 5px; }
+  margin: 15px 0 0 0; }
 
 #menu__shifttypeone {
   border: 1px solid;
@@ -266,3 +279,7 @@ th {
   border: 1px solid;
   margin: 15px 0 0 0;
   padding: 5px; }
+
+.menu_butcol {
+  background-color: burlywood; 
+}
