@@ -59,35 +59,84 @@ function twotwo(svalue, mdate) {
     }
 }
 
+//private int[] mass = { 31, 30 }
+
+let arr = [31,28,31,30,31,30,31,31,30,30,31,31];
+
 button.onclick = () => {
     const sindex = mday.options.selectedIndex;
-    let svalue = +mday.options[sindex].value;
+    let startDay = +mday.options[sindex].value;
+    startDay = startDay - 1;
 
-    switch (mmonth.value) {
+    let selectedIndexMonth = mmonth.options.selectedIndex;
+    let startMonth = +mmonth.options[selectedIndexMonth].value;
+
+    for (let i = 0; i < startMonth; i++){
+        startDay += arr[i]
+    }
+
+    let workDays = +mshifttypeone.value;
+    let weekendDays = +mshifttypetwo.value;
+    let shiftWorkDays = workDays + weekendDays;
+
+    for (let i = startDay; i < jdate.length; i = i + shiftWorkDays) {
+        for (let j = i; j < workDays + i; j++){
+            if (j < jdate.length)
+                jdate[j].classList.add('menu_butcol');
+        }
+    }
+
+    /*switch (mmonth.value) {
         case 'J':
             if (mshifttypeone.value == '2' && mshifttypetwo.value == '2') {
-                twotwo(svalue, jdate);
+                for (let i = svalue; i < jdate.length; i++) {
+                    jdate[i].classList.add('menu_butcol');
+                    jdate[i - 1].classList.add('menu_butcol');
+                    i = i + 3;
+                }
+
             }
             if (mshifttypeone.value == '5' && mshifttypetwo.value == '2') {
-                fivetwo(svalue, jdate);
+                for (let i = svalue; i < jdate.length; i++) {
+                    jdate[i].classList.add('menu_butcol');
+                    jdate[i - 1].classList.add('menu_butcol');
+                    jdate[i + 1].classList.add('menu_butcol');
+                    jdate[i + 2].classList.add('menu_butcol');
+                    jdate[i + 3].classList.add('menu_butcol');
+                    i = i + 6;
+                }
+
             }
             break;
         case 'F':
             if (mshifttypeone.value == '2' && mshifttypetwo.value == '2') {
-                twotwo(svalue, fdate);
+                for (let i = svalue; i < jdate.length; i++) {
+                    jdate[i].classList.add('menu_butcol');
+                    jdate[i - 1].classList.add('menu_butcol');
+                    i = i + 3;
+                }
+
             }
             if (mshifttypeone.value == '5' && mshifttypetwo.value == '2') {
-                fivetwo(svalue, fdate);
+                for (let i = svalue; i < jdate.length; i++) {
+                    jdate[i].classList.add('menu_butcol');
+                    jdate[i - 1].classList.add('menu_butcol');
+                    jdate[i + 1].classList.add('menu_butcol');
+                    jdate[i + 2].classList.add('menu_butcol');
+                    jdate[i + 3].classList.add('menu_butcol');
+                    i = i + 6;
+                }
+
             }
             break;
         case 'Mr':
             if (mshifttypeone.value == '2' && mshifttypetwo.value == '2') {
-                twotwo(svalue, mrdate);
+               // twotwo(svalue, mrdate);
             }
             if (mshifttypeone.value == '5' && mshifttypetwo.value == '2') {
-                fivetwo(svalue, mrdate);
+              //  fivetwo(svalue, mrdate);
             }
             break;
-    }
+    }*/
 
 };
