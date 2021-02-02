@@ -1,6 +1,8 @@
 
 @mixin flexbox() {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
 
+/*Screen sizes*/
+
  $minwidth: 320px;
  $mw: 1140;
  $md1: $mw+12;
@@ -11,6 +13,8 @@
  $font-family: 'Montserrat', sans-serif;
 
  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+ /*Reset styles*/
 
 *{padding:0;margin:0;border:0;}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
@@ -32,6 +36,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
     width: 100%;
     min-height: 100%;
     overflow: hidden;
+    
 }
 
 .container {
@@ -71,6 +76,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
 .calendar__row {
     @include flexbox();
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 40px 0 0 0;
     font-size: 16px;
 }
@@ -199,7 +205,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
    left: 45%;
    margin: 0 0 30px 0;
 }
-.menu__but {
+.menu__count {
    /*position: relative;
    left: 45%;
    margin: 0 0 30px 0;*/
@@ -223,17 +229,17 @@ th {
     padding: 5px 0 5px 0;
     border: 1px solid black;
 }
-#menu__mday {
+#menu__sday {
     border: 1px solid;
     padding: 5px;
     margin: 0 20px 0 0;
 }
-#menu__mmonth {
+#menu__smonth {
     border: 1px solid;
     padding: 5px;
     margin: 0 20px 0 0;
 }
-#menu__myear {
+#menu__syear {
     border: 1px solid;
     padding: 5px;
 }
